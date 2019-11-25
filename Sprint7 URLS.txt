@@ -1,0 +1,48 @@
+---Customer Links
+
+1.http://10.102.54.165:7080/custLogin/user1/password1 -----post
+2.http://10.102.54.165:7080/viewMyInvestment           get
+3.http://10.102.54.165:7080/directInvest/user1/10001/15000 post
+4.http://10.102.54.165:7080//buyGold/user1/1    post
+5.http://10.102.54.165:7080/buySilver/user1/1   post
+6.http://10.102.54.165:7080/sellGold/user1/1    post
+7.http://10.102.54.165:7080/sellSilver/user1/1  post
+8.http://10.102.54.165:7080//investSipMf/user1/10002 post
+{
+	"mfAmount":"2000",
+	"openingDate":"2019-11-23",
+	"frequency":"DAILY",
+	"duration":"10"
+}
+
+9.http://10.102.54.165:7080/viewSipMf  get
+10.http://10.102.54.165:7080/viewTrans/user1 get
+11.http://10.102.54.165:7080/viewDirectMf get
+12.http://10.102.54.165:7080/withdrawDirMf/user1/{folioNumber} post
+13.http://10.102.54.165:7080/withdrawSipMf/user1/{folioNumber} post 
+14.http://10.102.54.165:7080/linkAccount/12341234123/user1     post
+
+
+----Bank links
+1. http://10.102.54.165:7080/bankLogin/id1/pass1  post
+2. http://10.102.54.165:7080/viewGPrice           get
+3. http://10.102.54.165:7080/viewSPrice           get
+4. http://10.102.54.165:7080/updateGPrice/3800    post
+5. http://10.102.54.165:7080/updateSPrice/600     post
+6. http://10.102.54.165:7080/viewMf               get
+7. http://10.102.54.165:7080/addMf                post
+{
+"mfPlanId": "10006",
+"title":"IBS_Star",
+"nav":"700",
+"minAmtSip":"4000",
+"minAmtDir":"10000",
+"sipStatus":"true"
+}
+8. http://10.102.54.165:7080/updateNav/10002/500         put
+9. http://10.102.54.165:7080/updateSipStatus/10006/false  put
+10. http://10.102.54.165:7080//updateDirStatus/10006/false  put
+11. http://10.102.54.165:7080/updateMinDirAmt/10006/800     put
+12. http://10.102.54.165:7080//updateMinSipAmt/10006/1000   put
+13. http://10.102.54.165:7080/removeMf/10006                patch
+14. 
